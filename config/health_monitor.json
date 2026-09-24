@@ -1,0 +1,20 @@
+{
+    "interval_seconds": 5,
+    "thresholds": {
+        "cpu_percent": 80.0,
+        "memory_percent": 75.0,
+        "disk_percent": 80.0,
+        "temperature_celsius": 70.0
+    },
+    "network": {
+        "interface": "eth0",
+        "ping_target": "8.8.8.8"
+    },
+    "critical_service": {
+        "name": "ssh",
+        "restart_on_failure": true
+    },
+    "logging": {
+        "file": "/var/log/device-health-monitor.log"
+    }
+}
